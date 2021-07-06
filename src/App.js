@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import CustomBtn from "./CustomBtn";
+import FRParentInput from "./FRParentInput";
 
 class Parent extends React.Component {
   constructor(props) {
@@ -78,11 +79,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <p>*********Задание 9-3*******</p>
         <Parent />
         <br />
         <CustomBtn ref={this.customBtnRef}>
           <strong>SENDING...</strong>
         </CustomBtn>
+        <br />
+        <br />
+        <br />
+        <p>*********Задание 9-5 *******</p>
+        <FRParentInput />
       </div>
     );
   }
