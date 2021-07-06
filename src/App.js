@@ -78,7 +78,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <Parent /> */}
+        <Parent />
         <br />
         <CustomBtn ref={this.customBtnRef}>
           <strong>SENDING...</strong>
