@@ -1,4 +1,5 @@
 import React from "react";
+import FormExample from "./9-6/FormExample";
 import "./App.css";
 import CustomBtn from "./CustomBtn";
 import FRParentInput from "./FRParentInput";
@@ -85,11 +86,12 @@ class App extends React.Component {
         <CustomBtn ref={this.customBtnRef}>
           <strong>SENDING...</strong>
         </CustomBtn>
-        <br />
-        <br />
+
         <br />
         <p>*********Задание 9-5 *******</p>
         <FRParentInput />
+        <p>*********Задание 9-7 *******</p>
+        <FormExample />
       </div>
     );
   }
