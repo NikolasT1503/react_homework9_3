@@ -1,8 +1,10 @@
 import React from "react";
-import FormExample from "./9-6/FormExample";
+import FormExample from "./9-7/FormExample";
+import HookForm from "./9-8/HookForm";
 import "./App.css";
 import CustomBtn from "./CustomBtn";
 import FRParentInput from "./FRParentInput";
+import Weather from './9-9/Weather';
 
 class Parent extends React.Component {
   constructor(props) {
@@ -77,6 +79,7 @@ class App extends React.Component {
       this.customBtnRef.current.changeButtonStatus()
     },1000)
   }
+  
   render() {
     return (
       <div className="App">
@@ -92,6 +95,10 @@ class App extends React.Component {
         <FRParentInput />
         <p>*********Задание 9-7 *******</p>
         <FormExample />
+        <p>*********Задание 9-8 *******</p>
+        {<HookForm />}
+        <p>*********Задание 9-9 *******</p>
+        <Weather />
       </div>
     );
   }
